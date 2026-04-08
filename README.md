@@ -100,6 +100,20 @@ mininet> iperf h1 h2
 
 ---
 
+## Output Screenshots
+
+Include the following screenshots in the `screenshots/` folder:
+
+1. Controller startup (POX terminal showing listening port)
+2. Mininet topology initialization
+3. Ping test results (0% packet loss)
+4. Flow statistics output
+5. Port statistics output
+6. Iperf traffic generation
+7. Increasing packet/byte counts over time
+
+---
+
 ## Working Explanation
 
 The controller:
@@ -126,6 +140,29 @@ The controller:
 * Higher traffic results in increased byte counts
 * Iperf generates significantly more traffic than ping
 * Flow and port statistics reflect real-time activity
+
+---
+
+## Known Issues
+
+* POX may display a Python version warning, which does not affect functionality
+* Port 6633 must be free before running the controller
+
+---
+
+## References
+
+* POX Controller Documentation
+* Mininet Documentation
+* OpenFlow Specification
+
+---
+
+## Author
+
+* Name: [Your Name]
+* Course: SDN / Networking Lab
+* Project Type: Individual
 
 ---
 
